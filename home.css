@@ -1,0 +1,133 @@
+main {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	background-color: #0e0e0e;
+	padding-top: 85px;
+}
+
+.hero-section {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	flex-shrink: 0;
+	position: relative;
+}
+
+.hero-section::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+		180deg,
+		rgba(14, 14, 14, 0) 0%,
+		rgba(14, 14, 14, 0.75) 100%
+	);
+	z-index: 1;
+}
+
+.hero-section > .hero-image {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.hero-section > h1 {
+	position: absolute;
+	bottom: 140px;
+	left: 250px;
+	z-index: 3;
+	color: var(--secondary);
+	font-family: Fraunces;
+	font-size: 96px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 134.4%;
+}
+
+.hero-section > h1 > span.web {
+	font-family: PicNic;
+	color: var(--primary);
+}
+
+.hero-section .arrow {
+	position: absolute;
+	right: 190px;
+	bottom: 250px;
+	z-index: 3;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.hero-section .arrow:hover {
+	transform: rotate(-25deg);
+}
+
+.short-des {
+	display: flex;
+	flex: 1 0 0;
+	padding: 10px 300px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	align-self: stretch;
+	font-size: 34px;
+	position: relative;
+	text-align: center;
+	color: var(--secondary);
+	font-size: 34px;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin: 0 250px;
+	margin-top: 87px;
+	margin-bottom: 250px;
+	border-top: 1px solid var(--secondary);
+	border-bottom: 1px solid var(--secondary);
+}
+
+.project__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding: 60px 0px;
+	margin: 0px 80px;
+	transition: 0.3s;
+}
+
+.project__item:hover {
+	margin: 0px -30px;
+}
+
+.project__item > .title {
+	color: var(--secondary);
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 96px;
+}
+
+.project__item > .subtitle {
+	color: var(--secondary);
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background-color: var(--secondary);
+}
+
+.main-bottom {
+	width: 100%;
+	object-fit: cover;
+}
