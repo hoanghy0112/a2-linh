@@ -1,7 +1,6 @@
 .hero-section {
 	width: 100%;
 	height: 100vh;
-	overflow: hidden;
 	flex-shrink: 0;
 	position: relative;
 }
@@ -11,7 +10,7 @@
 	display: block;
 	position: absolute;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	background: linear-gradient(
 		180deg,
 		rgba(14, 14, 14, 0) 0%,
@@ -21,19 +20,19 @@
 }
 
 .hero-section > .hero-image {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 
 .hero-section > h1 {
 	position: absolute;
-	bottom: 140px;
-	left: 250px;
+	bottom: 7.75rem;
+	left: 15.5rem;
 	z-index: 3;
 	color: var(--secondary);
 	font-family: Fraunces;
-	font-size: 96px;
+	font-size: 6rem;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 134.4%;
@@ -46,30 +45,33 @@
 
 .hero-section .arrow {
 	position: absolute;
-	right: 190px;
-	bottom: 250px;
+	width: 14rem;
+	height: 14rem;
+	right: 12rem;
+	bottom: 9rem;
 	z-index: 3;
 	transition: 0.3s;
 	cursor: pointer;
+	transform-origin: 50% 50%;
 }
 
 .hero-section .arrow:hover {
-	transform: rotate(-25deg);
+	rotate: -25deg;
 }
 
 .short-des {
 	display: flex;
+	margin-top: 110px;
 	flex: 1 0 0;
-	padding: 10px 300px;
+	padding: 10px 18rem;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
 	align-self: stretch;
-	font-size: 34px;
+	font-size: 2.125rem;
 	position: relative;
 	text-align: center;
 	color: var(--secondary);
-	font-size: 34px;
 	font-family: Montserrat;
 	font-weight: 400;
 }
@@ -78,9 +80,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	margin: 0 250px;
-	margin-top: 87px;
-	margin-bottom: 250px;
+	margin: 0 15.5rem;
+	margin-top: 5.625rem;
+	margin-bottom: 15.5rem;
 	border-top: 1px solid var(--secondary);
 	border-bottom: 1px solid var(--secondary);
 }
@@ -90,27 +92,27 @@
 	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
-	padding: 60px 0px;
-	margin: 0px 80px;
+	padding: 3.7rem 0px;
+	margin: 0px 5rem;
 	transition: 0.3s;
 }
 
 .project__item:hover {
-	margin: 0px -30px;
+	margin: 0px -2rem;
 }
 
 .project__item > .title {
 	color: var(--secondary);
 	font-family: Montserrat;
 	font-weight: 500;
-	font-size: 96px;
+	font-size: 6rem;
 }
 
 .project__item > .subtitle {
 	color: var(--secondary);
 	font-family: Montserrat;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .line {
@@ -119,7 +121,90 @@
 	background-color: var(--secondary);
 }
 
-.main-bottom {
-	width: 100%;
-	object-fit: cover;
+@media (max-width: 1440px) {
+	.hero-section > h1 {
+		left: 7rem !important;
+		bottom: 4rem !important;
+	}
+
+	.short-des {
+		padding: 10px 250px;
+	}
+
+	.arrow {
+		width: 10rem !important;
+		height: 10rem !important;
+		right: 5rem !important;
+	}
+
+	.project {
+		margin: 0 10rem !important;
+		margin-top: 5.625rem !important;
+		margin-bottom: 15.5rem !important;
+	}
+}
+
+@media (max-width: 1024px) {
+	.hero-section {
+		height: 724px;
+	}
+
+	.hero-section > h1 {
+		font-size: 5rem !important;
+		left: 3rem !important;
+		bottom: 4rem !important;
+	}
+
+	.short-des {
+		padding: 0.7rem 16.43rem;
+		font-size: 1.8rem;
+	}
+
+	.project {
+		margin: 0 5rem !important;
+		margin-top: 5.625rem !important;
+		margin-bottom: 15.5rem !important;
+	}
+
+	.arrow {
+		width: 8rem !important;
+		height: 8rem !important;
+		right: 50px !important;
+		bottom: 0px !important;
+		transform: translateY(50%);
+	}
+
+	.project__item > .title {
+		font-size: 4rem !important;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero-section > h1 {
+		font-size: 5rem !important;
+		left: 3rem !important;
+		bottom: 5rem !important;
+	}
+
+	.short-des {
+		padding: 10px 150px;
+	}
+
+	.project {
+		margin: 0 5rem !important;
+		margin-top: 5.625rem !important;
+		margin-bottom: 15.5rem !important;
+	}
+
+	.arrow {
+		width: 8rem !important;
+		height: 8rem !important;
+		right: 50px !important;
+		bottom: 0px !important;
+		transform: translateY(50%);
+	}
+
+	.project__item > .title {
+		font-size: 4rem !important;
+	}
 }

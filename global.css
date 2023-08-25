@@ -6,6 +6,7 @@
 
 html {
 	scroll-behavior: smooth;
+	font-size: 16px;
 }
 
 @font-face {
@@ -70,11 +71,11 @@ body {
 nav {
 	width: 100vw;
 	overflow: hidden;
-	padding: 0 170px;
 	display: flex;
 	position: fixed;
-	padding-top: 70px;
-	padding-bottom: 20px;
+	padding: 0 11rem;
+	padding-top: 4rem;
+	padding-bottom: 1.3rem;
 	left: 0;
 	align-items: center;
 	z-index: 3;
@@ -98,7 +99,7 @@ nav > a {
 }
 
 .nav_scroll {
-	background-color: black;
+	background-color: #0e0e0e;
 }
 
 main {
@@ -106,12 +107,16 @@ main {
 	overflow: hidden;
 	padding: 0;
 	background-color: #0e0e0e;
-	padding-top: 85px;
+}
+
+.main-bottom {
+	width: 100%;
+	object-fit: cover;
 }
 
 footer {
-	padding: 0 250px;
-	padding-bottom: 126px;
+	padding: 0 15.625rem;
+	padding-bottom: 7.8rem;
 }
 
 footer > .info {
@@ -123,7 +128,7 @@ footer > .info {
 
 footer .message {
 	font-family: Fraunces;
-	font-size: 96px;
+	font-size: 6rem;
 }
 
 footer .contact {
@@ -141,19 +146,11 @@ footer .contact > p {
 	width: max-content;
 	font-family: Montserrat;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.25rem;
 	transition: 0.3s;
 }
 
 footer .contact > p:hover {
-	cursor: pointer;
-	padding: 13px 68px;
-	border-radius: 999px;
-	border: 1px solid #0e0e0e;
-	width: max-content;
-	font-family: Montserrat;
-	font-weight: 500;
-	font-size: 20px;
 	background-color: #0e0e0e;
 	color: var(--secondary);
 }
@@ -167,14 +164,14 @@ footer .more {
 footer hr {
 	position: absolute;
 	width: 100%;
-	top: 96px;
+	top: 6rem;
 	left: 0;
 }
 
 footer .about_me_btn {
-	width: 192px;
-	height: 192px;
-	margin-right: 116px;
+	width: 12rem;
+	height: 12rem;
+	margin-right: 11rem;
 	background-color: var(--primary);
 	border: none;
 	outline: none;
@@ -182,14 +179,14 @@ footer .about_me_btn {
 	color: #0e0e0e;
 	font-family: Montserrat;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 1rem;
 	cursor: pointer;
 	z-index: 2;
 }
 
 footer .social-img {
 	display: flex;
-	gap: 30px;
+	gap: 2rem;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -197,8 +194,56 @@ footer .social-img {
 
 footer .social-img img {
 	display: flex;
-	gap: 30px;
-	width: 50px;
-	height: 50px;
+	gap: 2rem;
+	width: 3rem;
+	height: 3rem;
 	object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+	nav {
+		padding: 2rem 6rem;
+	}
+
+	html {
+		font-size: 16px;
+	}
+
+	footer {
+		padding: 0 5rem;
+		padding-bottom: 5rem;
+	}
+
+	footer .about_me_btn {
+		margin-right: 5rem !important;
+	}
+}
+
+@media (max-width: 1200px) {
+	nav {
+		padding: 2rem 3.9rem;
+	}
+
+	html {
+		font-size: 16px;
+	}
+
+	footer {
+		padding: 0 5rem;
+		padding-bottom: 5rem;
+	}
+}
+
+@media (max-width: 800px) {
+	footer > .info {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		row-gap: 50px;
+		margin-top: 100px;
+		margin-bottom: 50px;
+	}
+
+	footer .contact > p {
+		width: 100%;
+	}
 }

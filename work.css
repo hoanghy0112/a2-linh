@@ -54,3 +54,15 @@ h1 span {
 	margin-top: auto;
 	justify-self: end;
 }
+
+@media (max-width: 1200px) {
+	main {
+		padding: 0 60px;
+		padding-top: 200px;
+		padding-bottom: 150px;
+	}
+
+	.project__item > img {
+		width: 600px;
+	}
+}

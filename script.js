@@ -1,9 +1,8 @@
 window.addEventListener("scroll", (e) => {
-	const body = document.getElementsByTagName("body")[0];
 	const nav = document.getElementsByTagName("nav")[0];
 
 	const scrollTop = window.scrollY;
-	console.log({ scrollTop });
+	const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
 	if (scrollTop == 0) {
 		if (nav.classList.contains("nav_scroll")) {
@@ -12,5 +11,5 @@ window.addEventListener("scroll", (e) => {
 	} else {
 		nav.classList.add("nav_scroll");
 	}
-	nav.style.paddingTop = `${Math.max(70 - scrollTop, 20)}px`;
+	nav.style.paddingTop = `${Math.max(4 * rem - scrollTop, 1.3 * rem)}px`;
 });
