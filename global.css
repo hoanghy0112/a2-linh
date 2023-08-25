@@ -68,16 +68,20 @@ body {
 }
 
 nav {
-	width: 100%;
+	width: 100vw;
 	overflow: hidden;
 	padding: 0 170px;
 	display: flex;
-	position: absolute;
-	top: 70px;
+	position: fixed;
+	padding-top: 70px;
+	padding-bottom: 20px;
 	left: 0;
 	align-items: center;
 	z-index: 3;
 	justify-content: space-between;
+	background-color: transparent;
+	z-index: 4;
+	transition: 0.3s;
 }
 
 nav > a {
@@ -91,6 +95,18 @@ nav > a {
 
 .nav__button > a {
 	color: white !important;
+}
+
+.nav_scroll {
+	background-color: black;
+}
+
+main {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	background-color: #0e0e0e;
+	padding-top: 85px;
 }
 
 footer {
