@@ -11,23 +11,23 @@ html {
 
 @font-face {
 	font-family: Fraunces;
-	src: url("/fonts/Fraunces/Fraunces_9pt_Soft-Regular.ttf");
+	src: url("./fonts/Fraunces/Fraunces_9pt_Soft-Regular.ttf");
 }
 
 @font-face {
 	font-family: PicNic;
-	src: url("/fonts/PicNic/PicNic-Regular.woff");
+	src: url("./fonts/PicNic/PicNic-Regular.woff");
 }
 
 @font-face {
 	font-family: Montserrat;
-	src: url("/fonts/Montserrat/Montserrat-Regular.ttf");
+	src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: Montserrat;
-	src: url("/fonts/Montserrat/Montserrat-Medium.ttf");
+	src: url("./fonts/Montserrat/Montserrat-Medium.ttf");
 	font-weight: 500;
 }
 
