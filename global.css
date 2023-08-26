@@ -158,8 +158,6 @@ main {
 
 .next-btn:hover {
 	background-color: var(--secondary);
-	width: fit-content;
-	height: fit-content;
 	border-radius: 999px;
 }
 
