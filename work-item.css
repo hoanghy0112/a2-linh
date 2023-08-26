@@ -55,7 +55,7 @@ main > h2 {
 	width: max-content;
 }
 
-.show img {
+.show > div > .show__item {
 	width: 556px;
 	height: 431px;
 	background-color: gray;
@@ -69,8 +69,8 @@ main > h2 {
 }
 
 .bottom-btn img {
-    width: 230px;
-    height: 230px;
+	width: 230px;
+	height: 230px;
 }
 
 @media (max-width: 1400px) {
@@ -85,9 +85,9 @@ main > h2 {
 		gap: 30px;
 	}
 
-    .title h1 {
-        text-align: center;
-    }
+	.title h1 {
+		text-align: center;
+	}
 
 	.main-img {
 		margin-top: 100px;
