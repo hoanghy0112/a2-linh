@@ -80,6 +80,10 @@ main > h2 {
 		gap: 30px;
 	}
 
+    .title h1 {
+        text-align: center;
+    }
+
 	.main-img {
 		margin-top: 100px;
 	}
