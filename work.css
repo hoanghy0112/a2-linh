@@ -1,4 +1,4 @@
-main {
+5ain {
 	padding: 0 150px;
 	padding-top: 200px;
 	padding-bottom: 150px;
@@ -68,9 +68,13 @@ h1 span {
 	.project__item > img {
 		width: 600px;
 	}
+
+	.project__item__content > .description {
+		visibility: hidden;
+	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 	main {
 		padding: 0 15px;
 		padding-top: 112px;

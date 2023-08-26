@@ -123,8 +123,17 @@
 }
 
 @media (max-width: 1024px) {
+	main {
+		padding-top: 50px;
+	}
+
 	.hero-section {
 		height: 724px;
+	}
+
+	.hero-section::before {
+		top: 362px;
+		height: 362px;
 	}
 
 	.hero-section > h1 {
@@ -149,6 +158,10 @@
 }
 
 @media (max-width: 800px) {
+	main {
+		padding-top: 20px;
+	}
+
 	.hero-section {
 		height: 450px;
 	}
