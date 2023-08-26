@@ -148,6 +148,21 @@ main {
 	object-fit: cover;
 }
 
+.next-btn {
+	background-color: var(--primary);
+	width: fit-content;
+	height: fit-content;
+	border-radius: 999px;
+	transition: 0.3s;
+}
+
+.next-btn:hover {
+	background-color: var(--secondary);
+	width: fit-content;
+	height: fit-content;
+	border-radius: 999px;
+}
+
 .hero-section .arrow {
 	position: absolute;
 	width: 14rem;
