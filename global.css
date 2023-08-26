@@ -110,6 +110,19 @@ nav > a {
 	color: var(--primary) !important;
 }
 
+nav > a:hover {
+	color: var(--primary) !important;
+	text-decoration: underline;
+}
+
+nav a:hover {
+	color: var(--primary) !important;
+}
+
+nav a:active {
+	text-decoration: underline;
+}
+
 .nav__button {
 	display: flex;
 	gap: 50px;
@@ -219,6 +232,12 @@ footer .about_me_btn {
 	font-size: 1rem;
 	cursor: pointer;
 	z-index: 2;
+	transition: 0.3s;
+}
+
+footer .about_me_btn:hover {
+	background: #0e0e0e;
+	color: var(--primary);
 }
 
 footer .social-img {
