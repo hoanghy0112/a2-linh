@@ -43,14 +43,17 @@ h1 span {
 
 .project__item__content > .subtitle {
 	color: var(--secondary);
+	font-size: 20px;
 }
 
 .project__item__content > .title {
 	color: var(--secondary);
+	font-size: 40px;
 }
 
 .project__item__content > .description {
 	color: var(--secondary);
+	font-size: 20px;
 	margin-top: auto;
 	justify-self: end;
 }
@@ -64,5 +67,49 @@ h1 span {
 
 	.project__item > img {
 		width: 600px;
+	}
+}
+
+@media (max-width: 800px) {
+	main {
+		padding: 0 15px;
+		padding-top: 112px;
+		padding-bottom: 80px;
+	}
+
+	.project__item > img {
+		width: 600px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.project {
+		margin-top: 56px;
+		gap: 55px;
+	}
+
+	.project__item {
+		display: flex;
+		column-gap: 13px;
+	}
+
+	.project__item > img {
+		width: 210px;
+		aspect-ratio: 3 / 2;
+		background-color: gray;
+	}
+
+	.project__item__content > .subtitle {
+		font-size: 10px !important;
+	}
+
+	.project__item__content > .title {
+		font-size: 20px !important;
+	}
+
+	.project__item__content > .description {
+		font-size: 10px !important;
 	}
 }
